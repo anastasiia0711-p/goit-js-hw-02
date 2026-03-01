@@ -2,7 +2,7 @@ function formatMessage(message, maxLength) {
     if (message.length <= maxLength) {
         return message;
     } else { 
-        const substring = message.slice(message, maxLength);
+        const substring = message.slice(0, maxLength);
         return substring + "...";
 }
 }
